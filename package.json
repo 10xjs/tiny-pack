@@ -1,6 +1,6 @@
 {
   "name": "tiny-pack",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A really tiny bin packing algorithm < 500 bytes minfied.",
   "keywords": [
     "masonry",
