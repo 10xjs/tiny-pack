@@ -2,10 +2,17 @@
   "name": "tiny-pack",
   "version": "0.1.0",
   "description": "A really tiny bin packing algorithm < 500 bytes minfied.",
+  "keywords": [
+    "masonry",
+    "masonry grid",
+    "bin packing",
+    "resolver"
+  ],
   "main": "tiny-pack.js",
+  "types": "tiny-pack.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nealgranger/tiny-pack.git"
+    "url": "https://github.com/nealgranger/tiny-pack.git"
   },
   "author": "Neal Granger <neal@nealg.com>",
   "license": "MIT",

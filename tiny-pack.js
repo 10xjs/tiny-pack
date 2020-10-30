@@ -1,18 +1,18 @@
 /*!
   tiny-pack.js
-  2016 Neal Granger
-  Licensed under CC0-1.0
+  2020 Neal Granger
+  Licensed under MIT
 */
 
 /**
  * Pack a grid of rectangles, solving for a specific row as defined by a ratio
  * of the display width. This algorithm is entirely agnostic to actual width
  * and height values. The only inputs are aspect ratios (width/height). All
- * output is returned as values relative to a final width.
+ * output is returned as scale values relative to an absolute outer width.
  *
- * @param {Number} targetRatio - The desired row height as a ratio of the width.
- * @param {Number[]} ratios - An array of aspect ratios to pack.
- * @returns {Number[]} An array of width factors.
+ * @param {number} targetRatio - The desired row height as a ratio of the width.
+ * @param {number[]} ratios - An array of aspect ratios to pack.
+ * @returns {number[]} An array of scale values.
  */
 module.exports = function tinyPack(targetRatio, ratios) {
   // Create a new array that can be safely mutated.
@@ -44,7 +44,7 @@ module.exports = function tinyPack(targetRatio, ratios) {
         r = row.pop();
         push(row.map(function(r) { return r / previous; }));
       } else {
-        // Calculate width percantage values for the elements of the current
+        // Calculate width percentage values for the elements of the current
         // row and append them to the results array.
         push(row.map(function(r) { return r / ratio; }));
       }
