@@ -8,7 +8,7 @@
     "url": "git+https://github.com/nealgranger/tiny-pack.git"
   },
   "author": "Neal Granger <neal@nealg.com>",
-  "license": "CC0-1.0",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/nealgranger/tiny-pack/issues"
   },
